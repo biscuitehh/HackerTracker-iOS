@@ -29,6 +29,15 @@
 		5DE9038B1B01B32E00A2D565 /* HTMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE9038A1B01B32E00A2D565 /* HTMapsViewController.swift */; };
 		5DFB87BF1B30BBF10083604C /* Connections.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5DFB87BE1B30BBF10083604C /* Connections.plist */; };
 		5DFB87C91B3A188E0083604C /* HTSpeakersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFB87C81B3A188E0083604C /* HTSpeakersTableViewController.swift */; };
+		DCA3401C1D66B5C600FBFE2C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA3401A1D66B5C600FBFE2C /* Interface.storyboard */; };
+		DCA3401E1D66B5C600FBFE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCA3401D1D66B5C600FBFE2C /* Assets.xcassets */; };
+		DCA340251D66B5C600FBFE2C /* hackertracker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DCA340241D66B5C600FBFE2C /* hackertracker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DCA3402C1D66B5C600FBFE2C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA3402B1D66B5C600FBFE2C /* InterfaceController.swift */; };
+		DCA3402E1D66B5C600FBFE2C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA3402D1D66B5C600FBFE2C /* ExtensionDelegate.swift */; };
+		DCA340301D66B5C600FBFE2C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA3402F1D66B5C600FBFE2C /* NotificationController.swift */; };
+		DCA340321D66B5C600FBFE2C /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA340311D66B5C600FBFE2C /* ComplicationController.swift */; };
+		DCA340341D66B5C600FBFE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCA340331D66B5C600FBFE2C /* Assets.xcassets */; };
+		DCA340381D66B5C600FBFE2C /* hackertracker WatchKit.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DCA340181D66B5C600FBFE2C /* hackertracker WatchKit.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +47,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5DD642581AC3C62300ED3256;
 			remoteInfo = hackertracker;
+		};
+		DCA340261D66B5C600FBFE2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DD642511AC3C62300ED3256 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCA340231D66B5C600FBFE2C;
+			remoteInfo = "hackertracker WatchKit Extension";
+		};
+		DCA340361D66B5C600FBFE2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DD642511AC3C62300ED3256 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCA340171D66B5C600FBFE2C;
+			remoteInfo = "hackertracker WatchKit";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -50,6 +73,28 @@
 			files = (
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCA3403E1D66B5C600FBFE2C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DCA340251D66B5C600FBFE2C /* hackertracker WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCA340401D66B5C600FBFE2C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DCA340381D66B5C600FBFE2C /* hackertracker WatchKit.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -81,6 +126,18 @@
 		5DE9038A1B01B32E00A2D565 /* HTMapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMapsViewController.swift; sourceTree = "<group>"; };
 		5DFB87BE1B30BBF10083604C /* Connections.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Connections.plist; sourceTree = "<group>"; };
 		5DFB87C81B3A188E0083604C /* HTSpeakersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTSpeakersTableViewController.swift; sourceTree = "<group>"; };
+		DCA340181D66B5C600FBFE2C /* hackertracker WatchKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hackertracker WatchKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCA3401B1D66B5C600FBFE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		DCA3401D1D66B5C600FBFE2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCA3401F1D66B5C600FBFE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCA340241D66B5C600FBFE2C /* hackertracker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "hackertracker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCA3402A1D66B5C600FBFE2C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		DCA3402B1D66B5C600FBFE2C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		DCA3402D1D66B5C600FBFE2C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		DCA3402F1D66B5C600FBFE2C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		DCA340311D66B5C600FBFE2C /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		DCA340331D66B5C600FBFE2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCA340351D66B5C600FBFE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +155,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCA340211D66B5C600FBFE2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -106,6 +170,8 @@
 			children = (
 				5DD6425B1AC3C62300ED3256 /* hackertracker */,
 				5DD642741AC3C62300ED3256 /* hackertrackerTests */,
+				DCA340191D66B5C600FBFE2C /* hackertracker WatchKit */,
+				DCA340281D66B5C600FBFE2C /* hackertracker WatchKit Extension */,
 				5DD6425A1AC3C62300ED3256 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -115,6 +181,8 @@
 			children = (
 				5DD642591AC3C62300ED3256 /* hackertracker.app */,
 				5DD642711AC3C62300ED3256 /* hackertrackerTests.xctest */,
+				DCA340181D66B5C600FBFE2C /* hackertracker WatchKit.app */,
+				DCA340241D66B5C600FBFE2C /* hackertracker WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,6 +241,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DCA340191D66B5C600FBFE2C /* hackertracker WatchKit */ = {
+			isa = PBXGroup;
+			children = (
+				DCA3401A1D66B5C600FBFE2C /* Interface.storyboard */,
+				DCA3401D1D66B5C600FBFE2C /* Assets.xcassets */,
+				DCA3401F1D66B5C600FBFE2C /* Info.plist */,
+			);
+			path = "hackertracker WatchKit";
+			sourceTree = "<group>";
+		};
+		DCA340281D66B5C600FBFE2C /* hackertracker WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DCA3402B1D66B5C600FBFE2C /* InterfaceController.swift */,
+				DCA3402D1D66B5C600FBFE2C /* ExtensionDelegate.swift */,
+				DCA3402F1D66B5C600FBFE2C /* NotificationController.swift */,
+				DCA340311D66B5C600FBFE2C /* ComplicationController.swift */,
+				DCA340331D66B5C600FBFE2C /* Assets.xcassets */,
+				DCA340351D66B5C600FBFE2C /* Info.plist */,
+				DCA340291D66B5C600FBFE2C /* Supporting Files */,
+			);
+			path = "hackertracker WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		DCA340291D66B5C600FBFE2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCA3402A1D66B5C600FBFE2C /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -184,10 +284,12 @@
 				5DD642561AC3C62300ED3256 /* Frameworks */,
 				5DD642571AC3C62300ED3256 /* Resources */,
 				5D53FCD71B02A09A006653B1 /* Embed App Extensions */,
+				DCA340401D66B5C600FBFE2C /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DCA340371D66B5C600FBFE2C /* PBXTargetDependency */,
 			);
 			name = hackertracker;
 			productName = hackertracker;
@@ -212,6 +314,40 @@
 			productReference = 5DD642711AC3C62300ED3256 /* hackertrackerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		DCA340171D66B5C600FBFE2C /* hackertracker WatchKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCA3403F1D66B5C600FBFE2C /* Build configuration list for PBXNativeTarget "hackertracker WatchKit" */;
+			buildPhases = (
+				DCA340161D66B5C600FBFE2C /* Resources */,
+				DCA3403E1D66B5C600FBFE2C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCA340271D66B5C600FBFE2C /* PBXTargetDependency */,
+			);
+			name = "hackertracker WatchKit";
+			productName = "hackertracker WatchKit";
+			productReference = DCA340181D66B5C600FBFE2C /* hackertracker WatchKit.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		DCA340231D66B5C600FBFE2C /* hackertracker WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCA3403D1D66B5C600FBFE2C /* Build configuration list for PBXNativeTarget "hackertracker WatchKit Extension" */;
+			buildPhases = (
+				DCA340201D66B5C600FBFE2C /* Sources */,
+				DCA340211D66B5C600FBFE2C /* Frameworks */,
+				DCA340221D66B5C600FBFE2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "hackertracker WatchKit Extension";
+			productName = "hackertracker WatchKit Extension";
+			productReference = DCA340241D66B5C600FBFE2C /* hackertracker WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -225,11 +361,17 @@
 				TargetAttributes = {
 					5DD642581AC3C62300ED3256 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = MJ97FDMT75;
 					};
 					5DD642701AC3C62300ED3256 = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 5DD642581AC3C62300ED3256;
+					};
+					DCA340171D66B5C600FBFE2C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = MJ97FDMT75;
+					};
+					DCA340231D66B5C600FBFE2C = {
+						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
 			};
@@ -248,6 +390,8 @@
 			targets = (
 				5DD642581AC3C62300ED3256 /* hackertracker */,
 				5DD642701AC3C62300ED3256 /* hackertrackerTests */,
+				DCA340171D66B5C600FBFE2C /* hackertracker WatchKit */,
+				DCA340231D66B5C600FBFE2C /* hackertracker WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -270,6 +414,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCA340161D66B5C600FBFE2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCA3401E1D66B5C600FBFE2C /* Assets.xcassets in Resources */,
+				DCA3401C1D66B5C600FBFE2C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCA340221D66B5C600FBFE2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCA340341D66B5C600FBFE2C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +467,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCA340201D66B5C600FBFE2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCA340301D66B5C600FBFE2C /* NotificationController.swift in Sources */,
+				DCA340321D66B5C600FBFE2C /* ComplicationController.swift in Sources */,
+				DCA3402E1D66B5C600FBFE2C /* ExtensionDelegate.swift in Sources */,
+				DCA3402C1D66B5C600FBFE2C /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -313,6 +485,16 @@
 			isa = PBXTargetDependency;
 			target = 5DD642581AC3C62300ED3256 /* hackertracker */;
 			targetProxy = 5DD642721AC3C62300ED3256 /* PBXContainerItemProxy */;
+		};
+		DCA340271D66B5C600FBFE2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCA340231D66B5C600FBFE2C /* hackertracker WatchKit Extension */;
+			targetProxy = DCA340261D66B5C600FBFE2C /* PBXContainerItemProxy */;
+		};
+		DCA340371D66B5C600FBFE2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCA340171D66B5C600FBFE2C /* hackertracker WatchKit */;
+			targetProxy = DCA340361D66B5C600FBFE2C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -323,6 +505,14 @@
 				5DD642661AC3C62300ED3256 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DCA3401A1D66B5C600FBFE2C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCA3401B1D66B5C600FBFE2C /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -480,6 +670,84 @@
 			};
 			name = Release;
 		};
+		DCA340391D66B5C600FBFE2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = hackertracker_WatchKit_Extension;
+				INFOPLIST_FILE = "hackertracker WatchKit/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = org.beezle.hackertracker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		DCA3403A1D66B5C600FBFE2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = hackertracker_WatchKit_Extension;
+				INFOPLIST_FILE = "hackertracker WatchKit/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = org.beezle.hackertracker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		DCA3403B1D66B5C600FBFE2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "hackertracker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.beezle.hackertracker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		DCA3403C1D66B5C600FBFE2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "hackertracker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.beezle.hackertracker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -509,6 +777,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		DCA3403D1D66B5C600FBFE2C /* Build configuration list for PBXNativeTarget "hackertracker WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCA3403B1D66B5C600FBFE2C /* Debug */,
+				DCA3403C1D66B5C600FBFE2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DCA3403F1D66B5C600FBFE2C /* Build configuration list for PBXNativeTarget "hackertracker WatchKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCA340391D66B5C600FBFE2C /* Debug */,
+				DCA3403A1D66B5C600FBFE2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
